@@ -1,1 +1,48 @@
 @charset "UTF-8";
+
+*{
+    margin: 0px;   
+    padding: 0px;
+}
+html, body{
+    min-height: 100vh;
+    background-color: darkgray;
+}
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+}
+header > h1{
+    padding: 50px;
+    font-size: 9em;
+    font: bolder;
+    font-variant: small-caps;
+
+}
+ a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+a:hover{
+    text-decoration: underline;
+}
+header a:visited{
+    color: white;
+}
+header > p {
+    color: white;
+    padding-bottom: 50px;
+}
+
+
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
