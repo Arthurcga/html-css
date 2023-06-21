@@ -4,10 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
+    <style>
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+        th{
+            border: 1px solid black;
+        }
+        td{
+            border: 1px solid black;
+        }
+        caption{
+            border: solid black;
+            background-color: gray;
+            color: white;
+            font-size: 2em;
+        }
+        td.numero{
+            text-align: center;
+        }
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+        }
+
+    </style>
 </head>
 <body>
     <H1>Uso de tabelas grandes</H1>
     
+
+    <table>
+        <caption>
+            Melhores jogos do mundo!
+        </caption>
+        <thead>
+            <th scope="col">Best Games</th>
+            <th scope="col">Position</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Assassins Creed 2</td>
+                <td class="numero">1</td>
+            </tr>
+            <tr>
+                <td>Assassins Creed Brotherhood</td>
+                <td class="numero">2</td>
+            </tr>
+            <tr>
+                <td>Assassins Creed Revelations</td>
+                <td class="numero">3</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <Td> Melhor trilogia de todos os tempos.</Td>
+                <td></td>
+            </tr>
+        </tfoot>
+
+
+
+
+    </table>
     
 </body>
 </html>
