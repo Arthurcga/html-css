@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media query</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
     <header>
         <h1>Meu site
+            <span id="burg" class="material-icons" onclick="clickmenu()">menu</span>
 
         </h1>
-        <menu>
+        <menu id="imenu">
             <ul>
                 <li><a href="#">op 1</a></li>
                 <li><a href="#">op 2</a></li>
@@ -39,5 +42,14 @@
 
         </article>
     </main>
+    <script>
+        function clickmenu() {
+            if (imenu.style.display == 'block') {
+                imenu.style.display = 'none'
+            } else {
+                imenu.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
